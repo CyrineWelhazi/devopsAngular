@@ -25,7 +25,7 @@ stages {
         
         stage ('Build our image'){
             steps{
-                sh 'docker build -t syrine2205/devopsAngular .'
+                sh 'docker build -t syrine2205/devopsangular .'
             }
         }
         stage('Docker login')
@@ -38,7 +38,7 @@ stages {
       stage('Push') {
 
 			steps {
-				sh 'docker push syrine2205/devopsAngular'
+				sh 'docker push syrine2205/devopsangular'
 			}
 		}
     }
